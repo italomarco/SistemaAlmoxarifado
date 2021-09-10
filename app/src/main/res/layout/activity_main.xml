@@ -65,9 +65,10 @@
         app:layout_constraintTop_toBottomOf="@+id/editCodigo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Cadastra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:onClick="Cadastrar"
         android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
