@@ -11,6 +11,9 @@
         android:theme="@style/Theme.SistemaAlmoxarifado">
         <activity
             android:name=".CadastroProdutoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListaProdutosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

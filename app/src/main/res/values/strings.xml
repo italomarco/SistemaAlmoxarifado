@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SistemaAlmoxarifado</string>
+    <string name="consultar">Consultar</string>
+    <string name="cadastrar">Cadastrar</string>
 </resources>
