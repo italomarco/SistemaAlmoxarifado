@@ -44,4 +44,18 @@ public class ProdutoDAO {
         }
         return produtos;
     }
+    public void  excluir (Produto p){
+             banco.delete("produto", "id = ?",new  String[]{p.getId().toString()});
+
+    }
+
+    public void atualizar(Produto produto) {
+        ContentValues values = new ContentValues();
+        values.put("nome_produto",produto.getNome_produto());
+        values.put("codigo_produto",produto.getCodigo_produto());
+        values.put("quantidade_produto",produto.getQuantidade_produto());
+        banco.update("produto", values ,
+                "id = ?", new  String[]{produto.getId().toString()});
+
+    }
 }
